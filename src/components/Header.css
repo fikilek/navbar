@@ -1,0 +1,57 @@
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr;
+}
+
+.header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	outline: 1px solid red;
+}
+
+.header .main-menu {
+	display: flex;
+}
+
+.header .main-menu li {
+	position: relative;
+  padding: 1rem;
+}
+
+.header .main-menu li:hover {
+  background-color: rgb(237, 174, 14);
+}
+
+/* .header .main-menu li:hover > a {
+  background-color: rgb(205, 21, 119);
+} */
+
+.header .main-menu li ul.sub-menu {
+	position: absolute;
+	top: 100%;
+  visibility: hidden;
+}
+
+.header .main-menu li:hover ul.sub-menu {
+  visibility: visible;
+}
+
+.header .main-menu li ul.sub-menu-left {
+  left:0;
+}
+
+.header .main-menu li ul.sub-menu-right {
+  right: 0;
+}
+
+.header .logo {
+	outline: 1px solid red;
+}
+
+.header .logo svg {
+	margin: 0.5rem;
+	width: 3rem;
+	height: 3rem;
+}
