@@ -1,34 +1,33 @@
 .header .main-menu .menu-btn {
-	font-size: 2rem;
-  display: flex;
-  border: 1px solid green;
-  /* margin: 1rem; */
-  /* padding: 0.2rem; */
-  width: 85px;
+	font-size: 1.3rem;
+	display: flex;
+	border: 1px solid green;
+	text-align: right;
+	width: 90px;
+	justify-content: space-between;
 }
 
 /* .header .main-menu .menu-btn:hover {
   background-color: rgb(221, 240, 15);
 } */
 
-
 .header .main-menu .menu-btn a {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .data-tooltipped {
-  font-size: 2rem;
-  color: blue;
+	font-size: 2rem;
+	color: blue;
 }
 
 .tool-tip {
-  position: relative;
+	position: relative;
 }
 
 .tootip-content {
-  /* position: absolute; */
-  /* top: 0;
+	/* position: absolute; */
+	/* top: 0;
   left: 100px; */
-  background-color: rgb(250, 250, 250);
+	background-color: rgb(250, 250, 250);
 }

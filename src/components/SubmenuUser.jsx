@@ -11,13 +11,13 @@ const SubmenuUser = () => {
 					<li>
 						<MenuBtn
 							icon={<AiFillDashboard />}
-							menuName={{ name: "User Profile", abr: "usrp" }}
+							menuName={{ name: "User Profile", abr: "user" }}
 						/>
 					</li>
 					<li>
 						<MenuBtn
 							icon={<AiFillDashboard />}
-							menuName={{ name: "Signout", abr: "sgno" }}
+							menuName={{ name: "Signout", abr: "Logout" }}
 						/>
 					</li>
 				</ul>

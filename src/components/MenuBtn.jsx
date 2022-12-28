@@ -6,7 +6,7 @@ const MenuBtn = ({ menuName, icon }) => {
 	const { name, abr } = menuName;
 	return (
 		<a href="#">
-			<Tooltip
+			{/* <Tooltip
 				// title={name}
 				size={"big"}
 				position="left"
@@ -17,12 +17,12 @@ const MenuBtn = ({ menuName, icon }) => {
 						<strong className="tootip-content"  >{name}</strong>
 					</div>
 				}
-			>
+			> */}
 				<div className="menu-btn">
 					<div className="icon">{icon}</div>
 					<div className="abr">{abr}</div>
 				</div>
-			</Tooltip>
+			{/* </Tooltip> */}
 		</a>
 	);
 };

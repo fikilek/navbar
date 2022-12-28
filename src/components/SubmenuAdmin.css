@@ -1,0 +1,12 @@
+.sub-menu-admin-system-tables {
+	position: relative;
+  display: block;
+	/* width: 10px;
+	height: 10px; */
+}
+
+.sub-menu-admin-system-tables::before {
+	position: absolute;
+
+}
+

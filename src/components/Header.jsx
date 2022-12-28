@@ -1,14 +1,15 @@
 import React from "react";
 import "./Header.css";
-import { AiFillDashboard } from "react-icons/ai";
+import { AiFillDashboard, AiFillCaretDown } from "react-icons/ai";
 import { TbFilePower } from "react-icons/tb";
 import { FaRubleSign } from "react-icons/fa";
 import MenuBtn from "./MenuBtn";
 import MenuAvatar from "./MenuAvatar";
 import { Tooltip } from "react-tippy";
-import SubmenuMl2 from "./SubmenuMl2";
-import SubmenuAdminMl2 from "./SubmenuAdminMl2";
+import Submenu from "./Submenu";
+import SubmenuAdmin from "./SubmenuAdmin";
 import SubmenuUser from "./SubmenuUser";
+import SubmenuTrns from "./SubmenuTrns";
 
 const user = {
 	name: "Fikile",
@@ -28,7 +29,8 @@ const Header = () => {
 							icon={<AiFillDashboard />}
 							menuName={{ name: "Dashboard", abr: "Dbd" }}
 						/>
-						<SubmenuMl2 />
+						<AiFillCaretDown />
+						<Submenu />
 					</li>
 					<li>
 						<MenuBtn
@@ -36,14 +38,28 @@ const Header = () => {
 							menuName={{ name: "Assets", abr: "Asts" }}
 							user={user}
 						/>
-						<SubmenuMl2 />
+						<AiFillCaretDown />
+						<Submenu />
 					</li>
 					<li>
 						<MenuBtn
 							icon={<TbFilePower />}
 							menuName={{ name: "Transactions", abr: "Trns" }}
 						/>
-						<SubmenuMl2 />
+						<AiFillCaretDown />
+						<SubmenuTrns />
+					</li>
+					<li>
+						<MenuBtn
+							icon={<TbFilePower />}
+							menuName={{ name: "Erfs", abr: "Erfs" }}
+						/>
+					</li>
+					<li>
+						<MenuBtn
+							icon={<TbFilePower />}
+							menuName={{ name: "Body of Knowledge", abr: "Bok" }}
+						/>
 					</li>
 				</ul>
 
@@ -52,11 +68,13 @@ const Header = () => {
 						<MenuBtn
 							icon={<AiFillDashboard />}
 							menuName={{ name: "Admin", abr: "Admin" }}
-            />
-            <SubmenuAdminMl2 />
+						/>
+						<AiFillCaretDown />
+						<SubmenuAdmin />
 					</li>
 					<li>
 						<MenuAvatar user={{ surname: "Kentane", name: "Fikile" }} />
+						<AiFillCaretDown />
 						<SubmenuUser />
 					</li>
 				</ul>
